@@ -8,18 +8,20 @@
 }
 
 .main-header__title {    
-    font-size: 92px;
+    font-size: 80px;
     letter-spacing: -1.5px;    
 }
 
 .main-header__title--blue {
     color: var(--blue);
     color: blue;
+    font-size:60px;
 }
 
 .main-header__title--orange {
     color: var(--orange);
     color: orange;
+    font-size:60px;
 }
 
 .main-header__menu ul {
@@ -65,7 +67,8 @@
     height: 56px;
     padding: 28px;
     flex:1;
-    background-color: rgb(238, 227, 227);
+    background-color: var(--light-gray);
+    color: var(--gray);
     border: none;
     transition: all -3s ease-in-out;
     font-size: 22px;
@@ -74,9 +77,8 @@
 .search-form button{
     width: 56px;
     height: 56px;
+    background-color: var(--blue);
     border:none;
+    color: #fff;
     font-size: 22px;
-    color:white;
-    background-color: rgb(104, 104, 233);
 }
-

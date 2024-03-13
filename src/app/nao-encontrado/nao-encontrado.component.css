@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.container img {
+    width: auto;
+    height: 100%;
+}
+

@@ -7,9 +7,9 @@
         <nav class="main-header__menu">
             <ul>
                 <li>
-                    <a>Produto</a>
+                    <a routerLink="/produtos">Produto</a>
                 </li>
-                <li><a><i class="fa-solid fa-cart-shopping"></i>
+                <li><a routerLink="/carrinho"><i class="fa-solid fa-cart-shopping"></i>
                         Carrinho
                         <span class="badge-carrinho"> {{ carrinhoService.obtemCarrinho().length }} </span></a></li>
                 <li>

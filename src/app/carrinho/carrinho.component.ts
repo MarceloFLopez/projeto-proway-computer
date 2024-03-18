@@ -22,18 +22,18 @@ export class CarrinhoComponent implements OnInit {
     this.calculaTotal()
   }
 
-  removeProdutoCarrinho(produtoId: number){
+  removeProdutoCarrinho(produtoId: number) {
     this.itenCarrinho.filter(item => item.id !== produtoId);
     this.carrinhoService.removerProdutoDoCarrinho(produtoId);
     location.reload();
   }
 
-  calculaTotal(){
-    return this.total = this.itenCarrinho.reduce((prev, curr) => 
-    (prev + curr.preco * curr.quantidade), 0);
+  calculaTotal() {
+    return this.total = this.itenCarrinho.reduce((prev, curr) =>
+      (prev + curr.preco * curr.quantidade), 0);
   }
 
-  comprar(){
+  comprar() {
     alert("Parabéns, você finalizou sua comprar");
     this.carrinhoService.limparCarrinho();
     this.route.navigate(["produtos"]);
